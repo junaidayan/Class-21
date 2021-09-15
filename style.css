@@ -1,0 +1,84 @@
+
+body{
+	background-image: 
+	background-size: cover;
+	background-position: center center;
+
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 5px 2px 3px white;
+}
+
+.shadow{
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 5px 2px 2px blue;
+
+}
+
+.align p span{
+	font-weight: 800;
+	vertical-align: sub;
+	color: white;
+
+}
+.algn h1 span{
+	font-weight: 600;
+	vertical-align: super;
+}
+.box{
+	border: 1px solid red;
+	width: 500px;
+	height: 200px;
+	overflow: auto;
+
+
+}
+
+.text p{
+	border: 2px sollid black;
+	width: 200px;
+	height: 200px;
+}
+
+.card{
+	width: 400px;
+
+	height: 400px;
+	background-color: red;
+}
+
+.card .overlay{
+	width: 400px;
+	height: 400px;
+	background-color: green;
+	visibility: hidden;
+} 
+.card:hover .overlay{
+	visibility: visible;
+}
+
+.card2{
+	width: 400px;
+	height: 400px;
+	background-color: darkred;
+	position:relative;
+}
+.card2::after{
+	width: 100%;
+	top: 0;
+	left: 0;
+	content: "" ;
+	background-color: yellow;
+	height: 0;
+	position: absolute;
+
+}
+.card2:hover:after{
+	height: 100%;
+	transition: all ease .5s;
+
+}
